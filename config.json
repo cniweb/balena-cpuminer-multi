@@ -4,9 +4,9 @@
 	"__comment_yescrypt_zpool" : "-o stratum+tcp://yescrypt.eu.mine.zpool.ca:6233 -u 3MQJYf8ckmWE63CwWCWjY1Sfc8uUU1FNBx -p c=BTC",
 	"__comment_yescrypt_zergpool" : "-o stratum+tcp://yescrypt.mine.zergpool.com:6233 -u LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy -p c=LTC,id=balena",
 
-	"url" : "stratum+tcp://yescrypt.eu.mine.zpool.ca:6233",
-	"user" : "3MQJYf8ckmWE63CwWCWjY1Sfc8uUU1FNBx",
-	"pass" : "c=BTC",
+	"url" : "stratum+tcp:///yescrypt.mine.zergpool.com:6233",
+	"user" : "LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy",
+	"pass" : "c=LTC,id=balena",
 
 	"algo" : "yescrypt"
 }
