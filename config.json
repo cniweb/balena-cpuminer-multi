@@ -6,7 +6,7 @@
 
 	"url" : "stratum+tcp:///yescrypt.mine.zergpool.com:6233",
 	"user" : "LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy",
-	"pass" : "c=LTC,id=balena,sd=1",
+	"pass" : "c=LTC,id=balena",
 
 	"algo" : "yescrypt"
 }
