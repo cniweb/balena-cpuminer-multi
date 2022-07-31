@@ -1,4 +1,4 @@
-FROM balenalib/aarch64-debian:buster
+FROM balenalib/aarch64-debian:bookworm
 RUN set -x \
     # Runtime dependencies.
  && apt-get update \
