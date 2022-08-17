@@ -3,13 +3,6 @@ RUN set -x \
     # Runtime dependencies.
  && apt-get update \
  && apt-get upgrade -y \
- # apt-get install -y automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make g++
-# && apt-get install -y \
-#        libcurl4 \
-#        libgmp \
-#        libjansson \
-#        libssl \
-#        openssl \
     # Build dependencies.
  && apt-get install -y \
         autoconf \
@@ -29,7 +22,7 @@ RUN set -x \
  && cd /tmp/cpuminer \
  && ./autogen.sh \
  && extracflags="$extracflags -Ofast -flto -fuse-linker-plugin -ftree-loop-if-convert-stores" \
- && ./configure --with-crypto --with-curl CFLAGS="-O2 $extracflags -DUSE_ASM -pg" \
+ && ./configure --with-crypto --with-curl CFLAGS="-O2 $extracflags -march=armv8-a+crypto -mtune=cortex-a53 -DUSE_ASM -pg" \
  && make install -j 4 \
     # Clean-up
  && cd / \
@@ -39,10 +32,6 @@ RUN set -x \
         curl \
         g++ \
         git \
-#        libcurl4-openssl-dev \
-#        libjansson-dev \
-#        libssl-dev \
-#        libgmp-dev \
         make \
         pkg-config \
  && apt-get clean \
