@@ -3,10 +3,12 @@
 	"__comment_neoscrypt_zergpool" : "-o stratum+tcp://neoscrypt.mine.zergpool.com:4233 -u LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy -p c=LTC,id=balena",
 	"__comment_yescrypt_zpool" : "-o stratum+tcp://yescrypt.eu.mine.zpool.ca:6233 -u 3MQJYf8ckmWE63CwWCWjY1Sfc8uUU1FNBx -p c=BTC",
 	"__comment_yescrypt_zergpool" : "-o stratum+tcp://yescrypt.mine.zergpool.com:6233 -u LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy -p c=LTC,id=balena",
+	"__comment_power2b_zergpool" : "-o stratum+tcp://power2b.mine.zergpool.com:7445 -u LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy -p c=LTC,id=balena",
+	"__comment_yescryptr32_zergpool" : "-o stratum+tcp://yescryptR32.na.mine.zergpool.com:6343 -u LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy -p c=LTC,id=balena",
 
-	"url" : "stratum+tcp:///yescrypt.mine.zergpool.com:6233",
+	"url" : "stratum+tcp://yescryptR32.na.mine.zergpool.com:6343",
 	"user" : "LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy",
 	"pass" : "c=LTC,id=balena",
 
-	"algo" : "yescrypt"
+	"algo" : "yescryptr32"
 }
