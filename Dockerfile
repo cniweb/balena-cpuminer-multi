@@ -39,10 +39,10 @@ RUN set -x \
  && rm -rf /tmp/* \
     # Verify
  && cpuminer --cputest \
+# && cpuminer --help \
  && cpuminer --version
+WORKDIR /cpuminer
 # Config and Start-Script
 COPY config.json /cpuminer
 COPY start_cpuminer.sh /cpuminer
-RUN chmod +x /cpuminer/start_cpuminer.sh
-WORKDIR /cpuminer
 ENTRYPOINT ["./start_cpuminer.sh"]
