@@ -40,7 +40,9 @@ RUN set -x \
     # Verify
  && cpuminer --cputest \
  && cpuminer --version
-
-WORKDIR /cpuminer
+# Config and Start-Script
 COPY config.json /cpuminer
-CMD ["cpuminer", "--config=config.json"]
+COPY start_cpuminer.sh /cpuminer
+RUN chmod +x /cpuminer/start_cpuminer.sh
+WORKDIR /cpuminer
+ENTRYPOINT ["./start_cpuminer.sh"]
