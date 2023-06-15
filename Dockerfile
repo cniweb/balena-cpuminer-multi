@@ -23,7 +23,7 @@ RUN set -x \
  && ./autogen.sh \
  && extracflags="$extracflags -Ofast -flto -fuse-linker-plugin -ftree-loop-if-convert-stores" \
  && ./configure --with-crypto --with-curl CFLAGS="-O2 $extracflags -march=armv8-a+crypto -mtune=cortex-a53 -DUSE_ASM -pg" \
- && make install -j 4 \
+ && make -C /tmp/cpuminer install -j 4 \
     # Clean-up
  && cd / \
  && apt-get purge --auto-remove -y \
@@ -38,9 +38,8 @@ RUN set -x \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /tmp/* \
     # Verify
- && cpuminer --cputest \
-# && cpuminer --help \
- && cpuminer --version
+ && /usr/local/bin/cpuminer --cputest \
+ && /usr/local/bin/cpuminer -V
 WORKDIR /cpuminer
 # Config and Start-Script
 COPY config.json /cpuminer
