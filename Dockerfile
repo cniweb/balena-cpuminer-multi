@@ -22,7 +22,7 @@ RUN set -x \
  && cd /tmp/cpuminer \
  && ./autogen.sh \
  && extracflags="$extracflags -Ofast -flto -fuse-linker-plugin -ftree-loop-if-convert-stores" \
- && ./configure --with-crypto --with-curl CFLAGS="-O2 $extracflags -march=native -mtune=cortex-a7 -mfpu=neon-vfpv4 -DUSE_ASM -pg" \
+ && ./configure --with-crypto --with-curl CFLAGS="-O2 $extracflags -march=armv7-a+vfpv4 -mtune=cortex-a7 -mfpu=neon-vfpv4 -DUSE_ASM -pg" \
  && make -C /tmp/cpuminer install -j 4 \
     # Clean-up
  && cd / \
