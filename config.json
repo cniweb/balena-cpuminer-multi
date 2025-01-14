@@ -6,9 +6,9 @@
 	"__comment_power2b_zergpool" : "-o stratum+tcp://power2b.mine.zergpool.com:7445 -u LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy -p c=LTC,id=balena",
 	"__comment_yescryptr32_zergpool" : "-o stratum+tcp://yescryptR32.eu.mine.zergpool.com:6343 -u LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy -p c=LTC,id=balena",
 
-	"url" : "stratum+tcp://yescryptR32.eu.mine.zergpool.com:6343",
+	"url" : "stratum+tcp://yescryptR16.eu.mine.zergpool.com:6333",
 	"user" : "LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy",
 	"pass" : "c=LTC,id=balena",
 
-	"algo" : "yescryptr32"
+	"algo" : "yescryptr16"
 }
