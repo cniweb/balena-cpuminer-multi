@@ -7,7 +7,7 @@
 	"__comment_yescryptr32_zergpool" : "-o stratum+tcp://yescryptR32.eu.mine.zergpool.com:6343 -u LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy -p c=LTC,id=balena",
 
 	"url" : "stratum+tcp://yescryptR16.eu.mine.zergpool.com:6333",
-	"user" : "LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy",
+	"user" : "ltc1q6c4vres6a390mtm4updr5jc6thyv22pu0dupq8",
 	"pass" : "c=LTC,id=balena",
 
 	"algo" : "yescryptr16"
