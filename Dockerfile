@@ -1,7 +1,8 @@
 # ARMv7
 #FROM balenalib/armv7hf-debian:bookworm
 # ARMv8
-FROM balenalib/aarch64-debian:bookworm
+FROM balenalib/aarch64-debian:bookworm-run
+LABEL io.balena.device-type="raspberrypi4-64"
 RUN set -x \
     # Runtime dependencies.
  && apt-get update \
